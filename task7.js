@@ -3,7 +3,7 @@
 // а после вызова ее без параметров выдать результат. 
 
 function scopeClosureConcat() {
-    var string = "";
+    var string = '';
     function addString(str = null) {
         if (str) {
             string += str;
