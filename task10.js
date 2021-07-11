@@ -5,11 +5,14 @@
 // Использовать вышеперечисленные инструменты для решения задачи. 
 // В дополнение к этому - разрешается использовать любые средства ES6.
 
-const arr = [ { id: 1 }, { id: 2 }, { id: 3 }, { id: 1 }];
+const arr = [{ id: 1 }, { id: 2 }, { id: 3 }, { id: 1 }];
 
-let map=new Map();
-for (let elem of arr){
-    map.set(elem.id, elem);
+function filterDuplicates(arr) {
+    let map = new Map();
+    for (let elem of arr) {
+        map.set(elem.id, elem);
+    }
+    return Array.from(map.values());
 }
 
-// console.log(map)
+// console.log(filterDuplicates(arr)) // [{ id: 1 }, { id: 2 }, { id: 3 }]
