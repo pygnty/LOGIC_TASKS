@@ -8,15 +8,15 @@
 // user.print();
 // » Name: John, last name: Smith, age: 30.
 
-// function User(firstname, lastname, age) {
-//     this.firstname = firstname;
-//     this.lastname = lastname;
-//     this.age = age;
+function User(firstname, lastname, age) {
+    this.firstname = firstname;
+    this.lastname = lastname;
+    this.age = age;
 
-//     this.print = () => {
-//         console.log(`${this.firstname} ${this.lastname}: ${this.age}`);
-//     }
-// }
+    this.print = () => {
+        console.log(`${this.firstname} ${this.lastname}: ${this.age}`);
+    }
+}
 
 // let user = new User('ab', 'ba', 12);
 
